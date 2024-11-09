@@ -2,10 +2,10 @@ const { Character } = require('./personaje');
 
 class Warrior extends Character {
     constructor(name) {
-        super(name, 100, 10, 10, 6);
+        super(name, 70, 10, 10, 8);
         this.weapons = [
             { name: "Espada", damage: 10 },
-            { name: "HAcha", damage: 15 },
+            { name: "Hacha", damage: 15 },
             { name: "Mazo", damage: 20 },
             { name: "Lanza", damage: 25 }
         ];

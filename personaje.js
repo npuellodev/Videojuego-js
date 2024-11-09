@@ -5,8 +5,7 @@ class Character {
     this.attackPower = attackPower;
     this.defense = defense;
     this.speed = speed;
-    this.experience = 0;
-    this.level = 1;
+    this.hasAttackedThisRound = false;
   }
 
   attack(target) {
@@ -20,13 +19,6 @@ class Character {
     console.log(`${this.name} recibe ${damage} puntos de daño. Vida restante: ${this.life}`);
   }
 
-  levelUp() {
-    this.level += 1;
-    this.attackPower += 1;
-    this.defense += 1;
-    this.speed += 1;
-    this.experience = 0;
-  }
 }
 
 module.exports = { Character };

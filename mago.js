@@ -2,7 +2,7 @@ const { Character } = require('./personaje');
 
 class Mage extends Character {
   constructor(name) {
-    super(name, 50, 20, 5, 8);
+    super(name, 50, 20, 5, 5);
     this.mana = 100;
     this.spells = [
       { name: "Bola de Fuego", damage: 20, costMana: 15 },
